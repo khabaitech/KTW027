@@ -1,0 +1,184 @@
+nav{float: right;
+    margin-top: 30px;
+    text-align: center;
+      }
+a{margin-right: 40px;
+    padding-bottom: 20px;
+   color:white;
+   text-decoration: none;
+   font-family: 'DM Serif Display', serif;
+    font-size: 20px}
+/*  body{background-color: #FFFFCD}*/
+  
+  .a1{color: blue;}
+  h2{color: blue;}
+
+img:hover,
+.sunder{
+    scale:1.05;
+}
+#a1{color: white;
+    background-color: blue;
+    text-decoration: none;
+    border: none;
+    }
+#a2{color: white;
+    background-color: blue;
+    text-decoration: none;
+    border: none;}
+
+
+
+/*====RUNNING NAME====*/
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap&#39;');
+
+/*body{
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Unbounded', cursive;
+    background:url(img1.jpg);
+}*/
+
+.main-container{
+    position: relative;
+    width: 90%;
+}
+
+.static-container{
+    display: inline-block;
+    margin: 20px;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 900;
+    width: 150px;
+   
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-size: 300%;
+   
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+   
+    animation: color 3s infinite alternate ease-in;
+}
+
+
+.moving-text-container{
+    display: inline-block;
+    height: 40px;
+    width: 300px;
+    backface-visibility: hidden;
+   
+    font-size: 25px;
+    color: darkblue;
+   
+    position: absolute;
+    top: 25px;
+   
+    overflow: hidden;
+}
+
+.moving-text-container > p{
+    padding: 0;
+    margin: 5px;
+}
+
+.moving-text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    position: absolute;
+    animation: upDown 7s infinite;
+}
+
+@keyframes upDown{
+   
+    0% {
+       top: 5px;
+    }
+   
+    10%{
+        top: 5px;
+    }
+   
+    20%{
+        top: -50px;
+    }
+   
+    30%{
+        top: -50px;
+    }
+   
+    40%{
+        top: -105px;
+    }
+   
+    50%{
+        top: -105px;
+    }
+   
+     60%{
+        top: -160px;
+    }
+   
+    70%{
+        top: -160px;
+    }
+   
+    80%{
+        top: 30px;
+    }
+   
+    85% {
+        top: 5px;
+    }
+   
+    100% {
+        top: 5px;
+    }
+   
+}
+
+@keyframes color{
+   
+    0% {
+        background-position: left;
+    }
+   
+    100% {
+        background-position: right;
+    }
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+ .fa{
+      padding: 10px;
+      color: black;
+    }
+    
+    .fa:hover{scale:1.5;
+      color: red;
+      background: black;
+      border-radius: 50%;
+
+    }
